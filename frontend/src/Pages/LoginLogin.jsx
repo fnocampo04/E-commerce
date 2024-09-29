@@ -17,7 +17,9 @@ export const LoginLogin = () => {
             id_clie,
             pass
           });
-    
+          if (response.data.message === 'Login exitoso admin') {
+            navigate('/admin')
+          }
           if (response.data.message === 'Login exitoso') {
             alert('Login exitoso');
             login(id_clie);

@@ -6,7 +6,7 @@ class Data():
             host="localhost",
             user="root",
             password="",
-            database="avellanadb"
+            database="avellana"
         )
         self.mycursor = self.mydb.cursor()
         self.result = None

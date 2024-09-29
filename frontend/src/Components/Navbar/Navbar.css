@@ -24,6 +24,10 @@
     
 }
 
+.navbar-hide {
+    display: none; /* Ocultar completamente la barra de navegación */
+}
+
 .navbar-shop2{
     display: flex;
     justify-content: space-around;
@@ -71,6 +75,9 @@
     color: black;
     font-size: 20px;
     font-weight: 300;
+}
+.navmenu-hide{
+    display: none;
 }
 
 .nav-menu-shop{

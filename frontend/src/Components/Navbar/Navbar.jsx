@@ -51,8 +51,14 @@ export const Navbar = () => {
             navLogo = 'nav-logo';
             colorIcon = 'black';
         } 
+    } 
+    } else if (location.pathname==='/admin'){
+        navbarClass='navbar-hide' 
+        navMenu = 'navmenu-hide';
+        navLogo = 'nav-logo';
+        colorIcon = 'black';
     }
-    } else {
+    else {
     navbarClass = 'navbar';
     navMenu = 'nav-menu';
     navLogo = 'nav-logo';

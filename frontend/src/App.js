@@ -8,6 +8,7 @@ import { Product } from './Pages/Product';
 import { LoginSignup } from './Pages/LoginSignup';
 import { Cart } from './Pages/Cart';
 import { Admin } from './Pages/Admin';
+import { AdminProducto } from './Pages/AdminProducto';
 import { Footer } from './Components/Footer/Footer';
 import clothing_banner from './Components/Assets/banner_women.png'
 import { LoginLogin } from './Pages/LoginLogin';
@@ -16,10 +17,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <Routes>
+        <Route path='/admin' element={<Admin/>}/>
+        <Route path='/admin/producto' element={<AdminProducto/>}/>
+      </Routes>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
-        <Route path='/accesorio' element={<ShopCategory category="accesorio"/>}/>
+        <Route path='/accesorios' element={<ShopCategory banner={clothing_banner} category="accesorio"/>}/>
         <Route path='/ropa' element={<ShopCategory banner={clothing_banner} category="ropa"/>}/>
         <Route path="/product" element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
@@ -27,7 +32,6 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/loginsup' element={<LoginSignup/>}/>
         <Route path='/loginlog' element={<LoginLogin/>}/>
-        <Route path='/admin' element={<Admin/>}/>
         <Route path='/clientmenu' element={<ClientMenu/>}/>
       </Routes>
       <Footer/>

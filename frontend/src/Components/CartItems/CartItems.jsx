@@ -5,7 +5,7 @@ import remove_icon from '../Assets/cart_cross_icon.png'
 
 
 export const CartItems = () => {
-    const {getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login } = useContext(ShopContext);
+    const {getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login,size} = useContext(ShopContext);
 
     const handlePayment = () => {
         if (isLoggedIn) {
@@ -22,20 +22,22 @@ export const CartItems = () => {
             <p>Productos</p>
             <p>Nombre</p>
             <p>Precio</p>
+            <p>Talla</p>
             <p>Cantidad</p>
             <p>Total</p>
             <p>Quitar</p>
         </div>
         <hr />
        {allProducts.map((e)=>{
-        if(cartItems[e.id_prod]>0){
+        if(cartItems[e.id_prod].quantity>0){
             return <div>
             <div className="cartitems-format cartitems-format-main">
                 <img src={e.img_url[0]} alt="" className='cartitems-product-icon' />
                 <p>{e.nombre}</p>
                 <p>${e.valor_venta}</p>
-                <button className='cartitems-quantity'>{cartItems[e.id_prod]}</button>
-                <p>${e.valor_venta*cartItems[e.id_prod]}</p>
+                <p>{cartItems[e.id_prod].size}</p>
+                <button className='cartitems-quantity'>{cartItems[e.id_prod].quantity}</button>
+                <p>${e.valor_venta*cartItems[e.id_prod].quantity}</p>
                 <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id_prod)}} alt="" />
             </div>
             <hr />

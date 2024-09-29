@@ -22,9 +22,11 @@ const ShopContextProvider = (props) => {
         return savedIdClie ? savedIdClie : ''; 
     });
     
-
     const [cartItems, setCartItems] = useState({});
+
     const [allProducts, setAllProducts] = useState([]);
+    const [allAccesorios, setAllAccesorios] = useState([]);
+    const [allRopa, setAllRopa] = useState([]);
 
     // Para iniciar sesion
     const login = (id_clie) => {
@@ -48,7 +50,11 @@ const ShopContextProvider = (props) => {
         const fetchProducts = async () => {
             try {
                 const response = await axios.get('http://127.0.0.1:5000/api/products');
+                const response2 = await axios.get('http://127.0.0.1:5000/api/products/accesorios');
+                const response3 = await axios.get('http://127.0.0.1:5000/api/products/ropa');
                 setAllProducts(response.data);
+                setAllAccesorios(response2.data);
+                setAllRopa(response3.data);
                 setCartItems(getDefaultCart(response.data)); 
             } catch (error) {
                 console.error("Error al cargar productos:", error);
@@ -58,9 +64,16 @@ const ShopContextProvider = (props) => {
         fetchProducts();
     }, []);
 
-    const addToCart = (itemId) => {
-        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-        
+    const addToCart = (itemId,size=null) => {
+        setCartItems((prev) => ({
+            ...prev,
+            [itemId]: {
+              ...prev[itemId],
+              quantity: (prev[itemId]?.quantity || 0) + 1,
+              size: prev[itemId]?.size ? `${prev[itemId].size}-${size}` : size // Concatenar o usar solo el nuevo tamaño
+            }
+          }));
+          
     }
 
     const removeFromCart = (itemId) => {
@@ -70,9 +83,9 @@ const ShopContextProvider = (props) => {
     const getTotalCartAmount = () => {
         let totalAmount = 0;
         for (const item in cartItems) {
-            if (cartItems[item] > 0) {
+            if (cartItems[item].quantity > 0) {
                 let itemInfo = allProducts.find((product) => product.id_prod === Number(item));
-                totalAmount += itemInfo.valor_venta * cartItems[item]; 
+                totalAmount += itemInfo.valor_venta * cartItems[item].quantity; 
             }
         }
         return totalAmount;
@@ -81,15 +94,14 @@ const ShopContextProvider = (props) => {
     const getTotalCartItems = () => {
         let totalItem = 0;
         for (const item in cartItems) {
-            if (cartItems[item] > 0) {
-                totalItem += cartItems[item];
+            if (cartItems[item].quantity > 0) {
+                totalItem += cartItems[item].quantity;
             }
         }
         return totalItem;
     }
-
-    const contextValue = { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie};
-
+    const contextValue = { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa};
+    
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
@@ -98,3 +110,6 @@ const ShopContextProvider = (props) => {
 }
 
 export default ShopContextProvider;
+
+
+
