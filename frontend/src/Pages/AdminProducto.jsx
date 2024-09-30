@@ -14,10 +14,14 @@ export const AdminProducto = () => {
   const [imagenes, setImagenes] = useState([]);
   const [categoriaAccesorio, setcategoriaAccesorio] = useState('');
   const [zapatoMaterial, setzapatoMaterial] = useState('');
+  const [marcaZapato, setmarcaZapato] = useState('');
   const [estiloRopa, setestiloRopa] = useState('');
+  const [marcaRopa, setmarcaRopa] = useState('');
+  const [materialAccesorio,setmaterialAccesorio] = useState('')
+  const [marcaAccesorio,setmarcaAccesorio] = useState('')
+
   //const [opcionAdicional, setOpcionAdicional] = useState('');
   const [talla, setTalla] = useState(''); 
-  const [color, setColor] = useState(''); 
   const [stock, setStock] = useState(0);
 
 
@@ -52,7 +56,13 @@ export const AdminProducto = () => {
           placeholder="Ingrese el estilo"
           value={estiloRopa}
           onChange={(e) => setestiloRopa(e.target.value)}
-        />
+        />,
+        <input
+        type="text"
+        placeholder="Ingrese la marca"
+        value={marcaRopa}
+        onChange={(e) => setmarcaRopa(e.target.value)}
+      />
       );
     } else if (categoria === 'ZAPATO') {
       return (
@@ -61,7 +71,13 @@ export const AdminProducto = () => {
           placeholder="Ingrese el material"
           value={zapatoMaterial}
           onChange={(e) => setzapatoMaterial(e.target.value)}
-        />
+        />,
+        <input
+        type="text"
+        placeholder="Ingrese la marca"
+        value={marcaZapato}
+        onChange={(e) => setmarcaZapato(e.target.value)}
+      />
       );
     } else if (categoria === 'ACCESORIO') {
       return (
@@ -76,7 +92,21 @@ export const AdminProducto = () => {
           <option value="COLLAR">Collar</option>
           <option value="GAFAS">Gafas</option>
           <option value="SOMBRERO">Sombrero</option>
-        </select>
+        </select>,
+
+        <input
+          type="text"
+          placeholder="Ingrese el material"
+          value={materialAccesorio}
+          onChange={(e) => setmaterialAccesorio(e.target.value)}
+        />,
+
+        <input
+        type="text"
+        placeholder="Ingrese la marce"
+        value={marcaAccesorio}
+        onChange={(e) => setmarcaAccesorio(e.target.value)}
+      />
       );
     }
     return null;
@@ -120,7 +150,6 @@ export const AdminProducto = () => {
         descri.trim() !== '' &&
         genero.trim() !== '' &&
         categoria.trim() !== '' &&
-        color.trim() !== '' &&
         stock > 0 &&
         talla.trim() !== '' &&
         (numImagenes >= 1 && imagenes.length === numImagenes)
@@ -139,8 +168,12 @@ export const AdminProducto = () => {
             categoria,
             imagenes,
             categoriaAccesorio,
+            materialAccesorio,
+            marcaAccesorio,
             zapatoMaterial,
+            marcaZapato,
             estiloRopa,
+            marcaRopa,
             talla,
             stock
         });
@@ -224,13 +257,6 @@ export const AdminProducto = () => {
               
               {renderTallaInput()}
               
-              <input
-                required
-                type="text"
-                placeholder="Color *"
-                value={color}
-                onChange={(e) => setColor(e.target.value)}
-              />
             </div>
             <div>
               <label>

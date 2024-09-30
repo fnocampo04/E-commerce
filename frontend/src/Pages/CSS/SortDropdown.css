@@ -1,0 +1,27 @@
+.shopcategory-sort {
+    position: relative; /* Permite que el dropdown se posicione correctamente */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.dropdown-list {
+    position: absolute; /* Posiciona la lista en relación al contenedor */
+    top: 100%; /* Coloca la lista justo debajo del texto */
+    left: 0;
+    background: white; /* Color de fondo de la lista */
+    border: 1px solid #ccc; /* Borde de la lista */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margin */
+    width: 100%; /* Para que la lista ocupe todo el ancho */
+}
+
+.dropdown-list li {
+    padding: 10px; /* Espaciado en cada opción */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+}

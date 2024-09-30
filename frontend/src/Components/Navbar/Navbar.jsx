@@ -52,7 +52,7 @@ export const Navbar = () => {
             colorIcon = 'black';
         } 
     } 
-    } else if (location.pathname==='/admin'){
+    } else if (location.pathname==='/admin' || location.pathname==='/admin/producto'){
         navbarClass='navbar-hide' 
         navMenu = 'navmenu-hide';
         navLogo = 'nav-logo';

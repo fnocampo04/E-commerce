@@ -9,6 +9,78 @@ db = Data()  # inicializa la conexión a la base de datos
 db1 = Data()
 db2 = Data()
 db3 = Data()
+db4 = Data()
+
+
+
+def add_img(url):
+    sql="SELECT id_img FROM IMG"
+    db4.sql_consult(sql)
+    if db4.result!=[]:
+        sql="SELECT MAX(id_img) FROM PRODUCTO"
+        db4.sql_consult(sql)
+        id_new=int(db4.result[0][0])+1
+    else:
+        id_new=1
+    sql=f"INSERT INTO IMG(id_img,url_img) VALUES ({id_new},{url})"
+    db4.sql_modify(str(sql))
+    return id_new
+
+@app.route('/api/insertarproducto', methods=['POST'])
+def insert_producto():
+    
+    data2 = request.get_json()
+
+    nombre = data2.get('nombre')
+    valor_base = data2.get('valor_base')
+    descri = data2.get('descri')
+    genero = data2.get('genero')
+    categoria = data2.get('categoria')
+    imagenes = data2.get('imagenes')
+    categoriaAccesorio = data2.get('categoriaAccesorio')    
+    materialAccesorio = data2.get('materialAccesorio')
+    marcaAccesorio = data2.get('marcaAccesorio')
+    zapatoMaterial = data2.get('zapatoMaterial')
+    marcaZapato = data2.get('marcaZapato')
+    marcaRopa = data2.get('marcaRopa')
+    estiloRopa = data2.get('estiloRopa')
+    talla = data2.get('talla')
+    stock = data2.get('stock')
+
+    db3.sql_consult("SELECT MAX(id_prod) FROM producto")
+    
+    id_prod = db3.result[0][0]+1
+    try:
+        db2.sql_modify(f"INSERT INTO producto (id_prod, nombre, valor_base, valor_venta, descri, genero, categoria) VALUES ({id_prod}, '{nombre}', {valor_base}, {valor_base}, '{descri}', '{genero}', '{categoria}')")
+        for img_url in imagenes:
+            db4.sql_consult("SELECT id_img FROM IMG")
+            if db4.result!=[]:
+                db4.sql_consult("SELECT MAX(id_img) FROM IMG")
+                id_img=int(db4.result[0][0])+1
+            else:
+                id_img=1
+            db4.sql_modify(f"INSERT INTO IMG(id_img,url_img) VALUES ({id_img},'{img_url}')")
+            db2.sql_modify( f"INSERT INTO CATALOGO_IMG(id_prod,id_img) VALUES ({id_prod},{id_img})")
+
+        if categoria=='ACCESORIO':
+            db2.sql_modify(f"INSERT INTO ACCESORIO (id_prod, categoria, material, marca) VALUES ({id_prod}, '{categoriaAccesorio}', '{materialAccesorio}', '{marcaAccesorio}')")
+        elif categoria=='ROPA':
+            db2.sql_modify(f"INSERT INTO ROPA (id_prod, estilo, marca) VALUES ({id_prod}, '{estiloRopa}', '{marcaRopa}')")
+            db2.sql_modify(f"INSERT INTO TALLA_LET(id_prod,talla_let,stock) VALUES ({id_prod},'{talla}',{stock})")
+        elif categoria=='PANTALON':
+            db2.sql_modify(f"INSERT INTO PANTALON (id_prod, estilo, marca) VALUES ({id_prod}, '{estiloRopa}', '{marcaRopa}')")
+            db2.sql_modify(f"INSERT INTO TALLA_NUM(id_prod,talla_num,stock) VALUES ({id_prod},{talla},{stock})")
+        else:
+            db2.sql_modify(f"INSERT INTO ZAPATOS (id_prod, material, marca) VALUES ({id_prod}, '{zapatoMaterial}', '{marcaZapato}')")
+            db2.sql_modify(f"INSERT INTO TALLA_NUM(id_prod,talla_num,stock) VALUES ({id_prod},{talla},{stock})")
+
+        return jsonify({"message": "Producto insertado exitosamente", "id_prod": id_prod}), 201
+    except Exception as e:
+        
+        return jsonify({"message": "Error al insertar el producto en python", "error": str(e)}), 500
+
+
+
 
 @app.route('/api/products', methods=['GET'])
 def get_products():

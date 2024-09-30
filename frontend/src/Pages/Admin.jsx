@@ -14,7 +14,7 @@ export const Admin = () => {
       <div className="admin-container">
       <h1>En que lugar desea los cambios?</h1>
       <div className="admin-fields">
-        <button onClick={navigate('/admin/producto')}>PRODUCTO</button>
+        <button onClick={() => navigate('/admin/producto')}>PRODUCTO</button>
         <button>PROVEEDOR</button>
         <button>DESCUENTOS</button>
         </div>

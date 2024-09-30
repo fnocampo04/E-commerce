@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './CSS/ShopCategory.css';
+import SortDropdown from './SortDropdown'; // Asegúrate de la ruta correcta
 import { ShopContext } from '../Context/ShopContext';
-import dropdown_icon from '../Components/Assets/dropdown_icon.png';
 import { Item } from '../Components/Item/Item';
+
 
 export const ShopCategory = (props) => {
   const { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa } = useContext(ShopContext); // Cambiamos a allProducts
@@ -10,14 +11,11 @@ export const ShopCategory = (props) => {
     <div className='shop-category'>
       <img className='shopcategory-banner' src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
-        <p>{props.category === "accesorio" ? (
-            <span>Mostrando 1-12 de {allAccesorios.length} productos</span>
-          ) : (
-            <span>Mostrando 1-12 de {allRopa.length} productos</span>
-          )}
+        <p>
+          <span>Mostrando 1-12</span> de {allAccesorios.length} productos {/* Muestra el total de productos */}
         </p>
         <div className="shopcategory-sort">
-          Ordenar por <img src={dropdown_icon} alt="" />
+          Ordenar por <SortDropdown />
         </div>
       </div>
       <div className="shopcategory-products">
