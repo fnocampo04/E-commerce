@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import dropdown_icon from '../Components/Assets/dropdown_icon.png'; // Asegúrate de tener la ruta correcta a tu icono
-import './CSS/SortDropdown.css'; // Asegúrate de que la ruta sea correcta
+import dropdown_icon from '../Components/Assets/dropdown_icon.png';
+import './CSS/SortDropdown.css';
 
-const SortDropdown = () => {
+const SortDropdown = ({ onOptionSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Ordenar por');
-  const options = ['Precio: Bajo a Alto', 'Precio: Alto a Bajo', 'Más Vendidos', 'Nuevos','Por defecto'];
+  const [selectedOption, setSelectedOption] = useState('Por defecto');
+  const options = ['Precio: Ascendente', 'Precio: Descendiente', 'Más Vendidos', 'Por defecto'];
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+    onOptionSelected(option); // Aquí llamas a la función pasada desde ShopCategory
   };
 
   return (

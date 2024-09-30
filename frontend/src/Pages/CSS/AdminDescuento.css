@@ -1,0 +1,50 @@
+.admin-container {
+  max-width: 980px;
+  background-color: white;
+  margin: auto;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.admin-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, select {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-type-checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  height: 50px;
+  background-color: #223D1E;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #1a2d15;
+}

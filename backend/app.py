@@ -11,20 +11,94 @@ db2 = Data()
 db3 = Data()
 db4 = Data()
 
+@app.route('/api/facturar', methods=['POST'])
+def facturar():
+    
+    data2 = request.get_json()
 
+    id_clie = data2.get('idClie')
+    subtotal = data2.get('subtotal')
+    cartItems = data2.get('cartItems')
 
-def add_img(url):
-    sql="SELECT id_img FROM IMG"
-    db4.sql_consult(sql)
-    if db4.result!=[]:
-        sql="SELECT MAX(id_img) FROM PRODUCTO"
-        db4.sql_consult(sql)
-        id_new=int(db4.result[0][0])+1
+    db3.sql_consult("SELECT id_fact FROM FACTURA")
+    if db3.result!=[]:
+        db3.sql_consult("SELECT MAX(id_fact) FROM FACTURA")
+        id_fact = db3.result[0][0]+1
     else:
-        id_new=1
-    sql=f"INSERT INTO IMG(id_img,url_img) VALUES ({id_new},{url})"
-    db4.sql_modify(str(sql))
-    return id_new
+        id_fact = 1
+    try:
+        db3.sql_modify(f"INSERT INTO FACTURA(id_fact,fecha,total,subtotal,dir_compra,num_guia, id_clie) VALUES({nit},'{nombre}','{telefono}','{direccion}','{ciudad}','{correo}')")
+        
+        return jsonify({"message": "Descuento insertado exitosamente", "id_descuento": id_descuento}), 201
+    except Exception as e:
+        
+        return jsonify({"message": "Error al insertar el Descuento", "error": str(e)}), 500
+
+@app.route('/api/insertarproveedor', methods=['POST'])
+def insert_proveedor():
+    
+    data2 = request.get_json()
+
+    nit = data2.get('nit')
+    nombre = data2.get('nombre')
+    ciudad = data2.get('ciudad')
+    correo = data2.get('correo')
+    direccion = data2.get('direccion')
+    telefono = data2.get('telefono')
+    tipoProducto = data2.get('tipoProducto')
+    try:
+        db3.sql_modify(f"INSERT INTO PROVEEDOR(id_prov,nombre,tel,dir,ciudad,correo) VALUES({nit},'{nombre}','{telefono}','{direccion}','{ciudad}','{correo}')")
+        id_prods = []
+
+        ProductosDcto = [f'{tipo_prod}' for tipo_prod in tipoProducto.keys() if tipoProducto[tipo_prod]]
+        for tipo_prod in ProductosDcto:
+            db3.sql_consult(f"SELECT id_prod FROM PRODUCTO WHERE categoria = '{tipo_prod}'")
+            for id_prod in db3.result:          
+                id_prods.append(id_prod[0])
+        for id_prod in id_prods:
+            db3.sql_modify(f"INSERT INTO SUMINISTRA(id_prod,id_prov) VALUES ({id_prod},{nit})")
+            print('agreguea suministra')
+        return jsonify({"message": 'Proveedor insertado exitosamente', "id_prov": nit}), 201
+    except Exception as e:
+        
+        return jsonify({"message": "Error al insertar el proveedor", "error": str(e)}), 500
+
+@app.route('/api/insertarDescuento', methods=['POST'])
+def insert_descuento():
+    
+    data2 = request.get_json()
+
+    fechaInicio = data2.get('fechaInicio')
+    fechaFin = data2.get('fechaFin')
+    porcentajeDescuento = data2.get('porcentajeDescuento')
+    tipoProducto = data2.get('tipoProducto')
+    
+    db3.sql_consult("SELECT id_descuento FROM DESCUENTO")
+    if db3.result!=[]:
+        db3.sql_consult("SELECT MAX(id_descuento) FROM descuento")
+        id_descuento = db3.result[0][0]+1
+    else:
+        id_descuento = 1
+    try:
+        id_prods = []
+        ProductosDcto = [f'{tipo_prod}' for tipo_prod in tipoProducto.keys() if tipoProducto[tipo_prod]]
+        for tipo_prod in ProductosDcto:
+            db3.sql_consult(f"SELECT id_prod FROM PRODUCTO WHERE categoria = '{tipo_prod}'")
+            for id_prod in db3.result:          
+                id_prods.append(id_prod[0])
+        db3.sql_modify(f"INSERT INTO DESCUENTO(id_descuento,porcen_dcto,fecha_inicio,fecha_fin,tipo) VALUES({id_descuento},{porcentajeDescuento},'{fechaInicio}','{fechaFin}','{', '.join(ProductosDcto)}')")
+        for id_prod in id_prods:
+            db3.sql_consult(f"SELECT valor_venta FROM PRODUCTO WHERE id_prod={id_prod}")
+            valor_venta_old = int(db3.result[0][0])
+            valor_venta_new = valor_venta_old - (valor_venta_old*int(porcentajeDescuento)/100)
+            db3.sql_modify(f"UPDATE PRODUCTO SET id_descuento={id_descuento},valor_venta={valor_venta_new} WHERE id_prod = {id_prod}")
+        return jsonify({"message": "Descuento insertado exitosamente", "id_descuento": id_descuento}), 201
+    except Exception as e:
+        
+        return jsonify({"message": "Error al insertar el Descuento", "error": str(e)}), 500
+
+
+
 
 @app.route('/api/insertarproducto', methods=['POST'])
 def insert_producto():
@@ -108,7 +182,7 @@ def get_products():
 
 @app.route('/api/products/accesorios', methods=['GET'])
 def get_accesorios():
-    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria FROM producto,accesorio WHERE producto.id_prod=accesorio.id_prod")
+    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria,valor_base FROM producto,accesorio WHERE producto.id_prod=accesorio.id_prod")
     products = []
     for product in db.result:  
         db1.sql_consult("SELECT catalogo_img.id_prod,img.url_img FROM catalogo_img,img WHERE catalogo_img.id_img=img.id_img")
@@ -122,7 +196,8 @@ def get_accesorios():
             'valor_venta': product[2],  
             'descri': product[3],
             'img_url': imagenes,
-            'categoria': product[4]
+            'categoria': product[4],
+            'valor_base':product[5]
 
         })
 
@@ -132,7 +207,7 @@ def get_accesorios():
 
 @app.route('/api/products/ropa', methods=['GET'])
 def get_ropa():
-    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria FROM producto,ropa WHERE producto.id_prod=ropa.id_prod")
+    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria, valor_base FROM producto,ropa WHERE producto.id_prod=ropa.id_prod")
     products = []
     for product in db.result:  
         db1.sql_consult("SELECT catalogo_img.id_prod,img.url_img FROM catalogo_img,img WHERE catalogo_img.id_img=img.id_img")
@@ -146,9 +221,10 @@ def get_ropa():
             'valor_venta': product[2],  
             'descri': product[3],
             'img_url': imagenes,
-            'categoria': product[4]
+            'categoria': product[4],
+            'valor_base':product[5]
         })
-    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria FROM producto,zapatos WHERE producto.id_prod=zapatos.id_prod")
+    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria,valor_base FROM producto,zapatos WHERE producto.id_prod=zapatos.id_prod")
     for product in db.result:  
         db1.sql_consult("SELECT catalogo_img.id_prod,img.url_img FROM catalogo_img,img WHERE catalogo_img.id_img=img.id_img")
         imagenes=[]
@@ -161,9 +237,10 @@ def get_ropa():
             'valor_venta': product[2],  
             'descri': product[3],
             'img_url': imagenes,
-            'categoria': product[4]
+            'categoria': product[4],
+            'valor_base':product[5]
         })
-    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria FROM producto,pantalon WHERE producto.id_prod=pantalon.id_prod")
+    db.sql_consult("SELECT producto.id_prod, nombre, valor_venta, descri,producto.categoria,valor_base FROM producto,pantalon WHERE producto.id_prod=pantalon.id_prod")
     for product in db.result:  
         db1.sql_consult("SELECT catalogo_img.id_prod,img.url_img FROM catalogo_img,img WHERE catalogo_img.id_img=img.id_img")
         imagenes=[]
@@ -176,7 +253,8 @@ def get_ropa():
             'valor_venta': product[2],  
             'descri': product[3],
             'img_url': imagenes,
-            'categoria': product[4]
+            'categoria': product[4],
+            'valor_base':product[5]
         })
 
 

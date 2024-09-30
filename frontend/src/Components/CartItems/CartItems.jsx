@@ -1,19 +1,38 @@
-import React, { useContext } from 'react'
+import React, { useContext , useState} from 'react'
 import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
 
 export const CartItems = () => {
-    const {getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login,size} = useContext(ShopContext);
+
+    const {getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login,idClie} = useContext(ShopContext);
+    const [showPaymentDetails, setShowPaymentDetails] = useState(false); // Controla si mostramos los detalles de pago
+  
+    const handleSubmit = async () => {
+        try {
+          const response = await axios.post('http://localhost:5000/api/facturar', {
+            idClie,
+            subtotal,
+            cartItems
+          });
+    
+        if (response.data.message === 'Proveedor insertado exitosamente') {
+            alert("Proveedor insertado exitosamente");
+          } else {
+            alert("Proveedor no insertado.");
+          }
+        } catch (err) {
+          alert("Error al insertar el proveedor, el proveedor ya existe.");
+        }
+      };
 
     const handlePayment = () => {
-        if (isLoggedIn) {
-            // Redirigir a la página de pago
-            alert("OK");
-        } else {
-            alert("Por favor, inicia sesión para proceder con el pago.");
-        }
+      if (isLoggedIn) {
+        setShowPaymentDetails(true); // Mostrar el resumen de productos al hacer clic en el botón
+      } else {
+        alert("Por favor, inicia sesión para proceder con el pago.");
+      }
     };
 
   return (
@@ -30,6 +49,7 @@ export const CartItems = () => {
         <hr />
        {allProducts.map((e)=>{
         if(cartItems[e.id_prod].quantity>0){
+
             return <div>
             <div className="cartitems-format cartitems-format-main">
                 <img src={e.img_url[0]} alt="" className='cartitems-product-icon' />
@@ -64,13 +84,34 @@ export const CartItems = () => {
             </div>
             <button onClick={handlePayment}>PROCEDER AL PAGO</button> {/* Botón depende del login */}
         </div>
-        <div className="cartitems-promcode">
-            <p>Si usted tiene un codigo de descuento, ingreselo aquí</p>
-            <div className="cartitems-promobox">
-                <input type="text" placeholder='Codigo de descuento'/>
-                <button>Ingresar</button>
+        <div>
+
+      {/* Mostrar los detalles de pago si showPaymentDetails es true */}
+      {showPaymentDetails && (
+        <div>
+            <div>
+                ID CLIENTE: <p>{idClie}</p>
             </div>
-       </div>
+
+            {allProducts.map((e) => {
+            const cartItem = cartItems[e.id_prod];
+            if (cartItem && cartItem.quantity > 0) {
+                return (
+                <div key={e.id_prod}>
+                    <p>{e.nombre}</p>
+                    <p>${e.valor_venta}</p>
+                    <p>Tamaño: {cartItem.size}</p>
+                    <p>Cantidad: {cartItem.quantity}</p>
+                    <p>Total: ${e.valor_venta * cartItem.quantity}</p>
+                    <hr />
+                </div>
+                );
+            }
+            return null;
+            })}
+        </div>
+      )}
+    </div>
        </div>
        
     </div>

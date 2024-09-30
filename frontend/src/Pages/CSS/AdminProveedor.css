@@ -1,0 +1,61 @@
+.admin-bg {
+    width: 100%;
+    height: 100vh;
+    background: #223D1E;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-container {
+    width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.admin-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-input input,
+.admin-input select {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.admin-input input:focus,
+.admin-input select:focus {
+    border-color: #223D1E;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #223D1E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #1a2d14;
+}

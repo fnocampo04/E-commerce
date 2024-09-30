@@ -103,7 +103,7 @@ export const AdminProducto = () => {
 
         <input
         type="text"
-        placeholder="Ingrese la marce"
+        placeholder="Ingrese la marca"
         value={marcaAccesorio}
         onChange={(e) => setmarcaAccesorio(e.target.value)}
       />

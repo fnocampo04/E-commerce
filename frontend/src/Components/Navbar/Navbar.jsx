@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from '../Assets/AvellanaLogoNegro-02.svg';
 import logo2 from '../Assets/AvellanaLogoNegroVertical.svg';
 import { Link, useLocation } from 'react-router-dom';
-import 'boxicons'
+import "../../../node_modules/boxicons/dist/boxicons"
 import { ShopContext } from '../../Context/ShopContext';
 
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
             colorIcon = 'black';
         } 
     } 
-    } else if (location.pathname==='/admin' || location.pathname==='/admin/producto'){
+    } else if (location.pathname==='/admin' || location.pathname==='/admin/producto' || location.pathname==='/admin/descuento' || location.pathname==='/admin/proveedor'){
         navbarClass='navbar-hide' 
         navMenu = 'navmenu-hide';
         navLogo = 'nav-logo';
