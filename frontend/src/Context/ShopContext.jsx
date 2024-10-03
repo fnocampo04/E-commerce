@@ -26,7 +26,13 @@ const ShopContextProvider = (props) => {
 
     const [allProducts, setAllProducts] = useState([]);
     const [allAccesorios, setAllAccesorios] = useState([]);
+    const [allAccesoriosAsc, setAllAccesoriosAsc] = useState([]);
+    const [allAccesoriosDesc, setAllAccesoriosDesc] = useState([]);
     const [allRopa, setAllRopa] = useState([]);
+    const [allRopaAsc, setAllRopaAsc] = useState([]);
+    const [allRopaDesc, setAllRopaDesc] = useState([]);
+
+
 
     // Para iniciar sesion
     const login = (id_clie) => {
@@ -50,12 +56,21 @@ const ShopContextProvider = (props) => {
         const fetchProducts = async () => {
             try {
                 const response = await axios.get('http://127.0.0.1:5000/api/products');
-                const response2 = await axios.get('http://127.0.0.1:5000/api/products/accesorios');
-                const response3 = await axios.get('http://127.0.0.1:5000/api/products/ropa');
                 setAllProducts(response.data);
-                setAllAccesorios(response2.data);
-                setAllRopa(response3.data);
                 setCartItems(getDefaultCart(response.data)); 
+                const response2 = await axios.get('http://127.0.0.1:5000/api/products/accesorios');
+                setAllAccesorios(response2.data);
+                const response4 = await axios.get('http://127.0.0.1:5000/api/products/accesorios/precioAsc');
+                setAllAccesoriosAsc(response4.data);
+                const response5 = await axios.get('http://127.0.0.1:5000/api/products/accesorios/precioDesc');
+                setAllAccesoriosDesc(response5.data);
+                const response3 = await axios.get('http://127.0.0.1:5000/api/products/ropa');
+                setAllRopa(response3.data);
+                const response6 = await axios.get('http://127.0.0.1:5000/api/products/ropa/precioAsc');
+                setAllRopaAsc(response6.data);
+                const response7 = await axios.get('http://127.0.0.1:5000/api/products/ropa/precioDesc');
+                setAllRopaDesc(response7.data);
+
             } catch (error) {
                 console.error("Error al cargar productos:", error);
             }
@@ -100,7 +115,7 @@ const ShopContextProvider = (props) => {
         }
         return totalItem;
     }
-    const contextValue = { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa};
+    const contextValue = { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa,allAccesoriosDesc,allAccesoriosAsc,allRopaDesc,allRopaAsc};
     
     return (
         <ShopContext.Provider value={contextValue}>

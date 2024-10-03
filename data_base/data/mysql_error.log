@@ -2018,3 +2018,687 @@
 2024-09-30  8:06:57 0 [Note] Plugin 'FEEDBACK' is disabled.
 2024-09-30  8:06:57 0 [Note] InnoDB: Buffer pool(s) load completed at 240930  8:06:57
 2024-09-30  8:06:57 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-09-30 18:14:45 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18780
+2024-09-30 18:14:45 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-09-30 18:14:45 0 [Note] InnoDB: Uses event mutexes
+2024-09-30 18:14:45 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-09-30 18:14:45 0 [Note] InnoDB: Number of pools: 1
+2024-09-30 18:14:45 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-09-30 18:14:45 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-09-30 18:14:45 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-09-30 18:14:45 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1073473
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\alumno.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`alumno``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`alumno` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\materia.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`materia``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`materia` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\monitor.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`monitor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`monitor` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\nota.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`nota``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`nota` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\prof_mat.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`prof_mat``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`prof_mat` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\profesor.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`profesor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`profesor` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\accesorio.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`accesorio``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`accesorio` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\catalogo_img.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`catalogo_img``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`catalogo_img` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\cliente.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`cliente` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\conjunto.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`conjunto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`conjunto` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\descuento.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`descuento``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`descuento` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\factura.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`factura` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\inferior.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`inferior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`inferior` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\item.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`item` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\opinion.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`opinion``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`opinion` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\producto.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`producto` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\proveedor.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`proveedor` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\suministra.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`suministra``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`suministra` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\superior.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`superior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`superior` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\zapato.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`zapato``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`zapato` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\cliente.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`cliente` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\factura.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`factura` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\item.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`item` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\producto.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`producto` because it could not be opened.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\proveedor.ibd' OS error: 203
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:45 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:45 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:45 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`proveedor` because it could not be opened.
+2024-09-30 18:14:46 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-09-30 18:14:46 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-09-30 18:14:46 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-09-30 18:14:46 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\taller2024\prueba.ibd' OS error: 203
+2024-09-30 18:14:46 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-09-30 18:14:46 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-09-30 18:14:46 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``taller2024`.`prueba``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-09-30 18:14:46 0 [Warning] InnoDB: Ignoring tablespace for `taller2024`.`prueba` because it could not be opened.
+2024-09-30 18:14:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-09-30 18:14:46 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-09-30 18:14:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-09-30 18:14:46 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-09-30 18:14:46 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2024-09-30 18:14:46 0 [Note] InnoDB: Waiting for purge to start
+2024-09-30 18:14:46 0 [Note] InnoDB: 10.4.32 started; log sequence number 1073482; transaction id 3353
+2024-09-30 18:14:46 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2024-09-30 18:14:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-09-30 18:14:46 0 [Note] InnoDB: Buffer pool(s) load completed at 240930 18:14:46
+2024-09-30 18:14:46 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-10-01  9:52:28 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 21620
+2024-10-01  9:52:28 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-01  9:52:28 0 [Note] InnoDB: Uses event mutexes
+2024-10-01  9:52:28 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-10-01  9:52:28 0 [Note] InnoDB: Number of pools: 1
+2024-10-01  9:52:28 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-01  9:52:28 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-10-01  9:52:28 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-01  9:52:28 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1085849
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\alumno.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`alumno``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`alumno` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\materia.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`materia``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`materia` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\monitor.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`monitor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`monitor` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\nota.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`nota``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`nota` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\prof_mat.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`prof_mat``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`prof_mat` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\profesor.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`profesor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`profesor` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\accesorio.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`accesorio``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`accesorio` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\catalogo_img.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`catalogo_img``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`catalogo_img` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\cliente.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`cliente` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\conjunto.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`conjunto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`conjunto` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\descuento.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`descuento``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`descuento` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\factura.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`factura` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\inferior.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`inferior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`inferior` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\item.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`item` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\opinion.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`opinion``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`opinion` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\producto.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`producto` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\proveedor.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`proveedor` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\suministra.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`suministra``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`suministra` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\superior.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`superior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`superior` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\zapato.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`zapato``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`zapato` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\cliente.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`cliente` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\factura.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`factura` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\item.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`item` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\producto.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`producto` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\proveedor.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`proveedor` because it could not be opened.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\taller2024\prueba.ibd' OS error: 203
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-01  9:52:29 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-01  9:52:29 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``taller2024`.`prueba``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-01  9:52:29 0 [Warning] InnoDB: Ignoring tablespace for `taller2024`.`prueba` because it could not be opened.
+2024-10-01  9:52:29 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-01  9:52:29 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-01  9:52:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-01  9:52:29 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-01  9:52:29 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2024-10-01  9:52:29 0 [Note] InnoDB: Waiting for purge to start
+2024-10-01  9:52:29 0 [Note] InnoDB: 10.4.32 started; log sequence number 1085858; transaction id 3396
+2024-10-01  9:52:29 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2024-10-01  9:52:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-01  9:52:29 0 [Note] InnoDB: Buffer pool(s) load completed at 241001  9:52:29
+2024-10-01  9:52:29 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-10-02 23:02:58 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 3408
+2024-10-02 23:02:58 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-02 23:02:58 0 [Note] InnoDB: Uses event mutexes
+2024-10-02 23:02:58 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-10-02 23:02:58 0 [Note] InnoDB: Number of pools: 1
+2024-10-02 23:02:58 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-02 23:02:58 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-10-02 23:02:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-02 23:02:58 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1122221
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\alumno.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`alumno``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`alumno` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\materia.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`materia``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`materia` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\monitor.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`monitor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`monitor` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\nota.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`nota``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`nota` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\prof_mat.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`prof_mat``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`prof_mat` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\academica\profesor.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``academica`.`profesor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `academica`.`profesor` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\accesorio.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`accesorio``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`accesorio` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\catalogo_img.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`catalogo_img``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`catalogo_img` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\cliente.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`cliente` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\conjunto.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`conjunto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`conjunto` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\descuento.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`descuento``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`descuento` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\factura.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`factura` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\inferior.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`inferior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`inferior` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\item.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`item` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\opinion.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`opinion``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`opinion` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\producto.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`producto` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\proveedor.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`proveedor` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\suministra.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`suministra``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`suministra` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\superior.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`superior``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`superior` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\avellanadb\zapato.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``avellanadb`.`zapato``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `avellanadb`.`zapato` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\cliente.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`cliente``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`cliente` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\factura.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`factura``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`factura` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\item.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`item``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`item` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\producto.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`producto``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`producto` because it could not be opened.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\cursobd\proveedor.ibd' OS error: 203
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``cursobd`.`proveedor``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:58 0 [Warning] InnoDB: Ignoring tablespace for `cursobd`.`proveedor` because it could not be opened.
+2024-10-02 23:02:59 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2024-10-02 23:02:59 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2024-10-02 23:02:59 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2024-10-02 23:02:59 0 [ERROR] InnoDB: Cannot open datafile for read-only: '.\taller2024\prueba.ibd' OS error: 203
+2024-10-02 23:02:59 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2024-10-02 23:02:59 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2024-10-02 23:02:59 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``taller2024`.`prueba``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2024-10-02 23:02:59 0 [Warning] InnoDB: Ignoring tablespace for `taller2024`.`prueba` because it could not be opened.
+2024-10-02 23:02:59 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-02 23:02:59 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-02 23:02:59 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-02 23:02:59 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-02 23:02:59 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2024-10-02 23:02:59 0 [Note] InnoDB: Waiting for purge to start
+2024-10-02 23:02:59 0 [Note] InnoDB: 10.4.32 started; log sequence number 1122230; transaction id 3490
+2024-10-02 23:02:59 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2024-10-02 23:02:59 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-02 23:02:59 0 [Note] InnoDB: Buffer pool(s) load completed at 241002 23:02:59
+2024-10-02 23:02:59 0 [Note] Server socket created on IP: '0.0.0.0'.

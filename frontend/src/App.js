@@ -11,6 +11,7 @@ import { Admin } from './Pages/Admin';
 import { AdminProducto } from './Pages/AdminProducto';
 import AdminDescuento from './Pages/AdminDescuento';
 import AdminProveedor from './Pages/AdminProveedor';
+import AdminFact from './Pages/AdminFact';
 import { Footer } from './Components/Footer/Footer';
 import clothing_banner from './Components/Assets/banner_women.png'
 import { LoginLogin } from './Pages/LoginLogin';
@@ -24,6 +25,7 @@ function App() {
         <Route path='/admin/producto' element={<AdminProducto/>}/>
         <Route path='/admin/descuento' element={<AdminDescuento/>}/>
         <Route path='/admin/proveedor' element={<AdminProveedor/>}/>
+        <Route path='/admin/facturas' element={<AdminFact/>}/>
 
       </Routes>
       <Navbar/>

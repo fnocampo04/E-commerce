@@ -1,18 +1,19 @@
 import React from 'react'
 import './Offers.css'
-import exclusive_image from'../Assets/exclusive_image.png'
+import { useNavigate } from 'react-router-dom';
+
 
 export const Offers = () => {
+  const navigate = useNavigate()
   return (
     <div className='offers'>
         <div className='offers-left'>
             <h1>Exclusivas</h1>
             <h1>Ofertas para ti</h1>
-            <p>LOS MEJORES PRODUCTOS</p>
-            <button>Ver ahora</button>
+            <p>LOS MEJORES ACCESORIOS</p>
+            <button onClick={() => navigate('/accesorios')}>Ver ahora</button>
         </div>
         <div className='offers-right'>
-            <img src={exclusive_image} alt="" />
         </div>
     </div>
   )

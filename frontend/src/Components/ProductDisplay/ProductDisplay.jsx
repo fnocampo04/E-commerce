@@ -65,10 +65,13 @@ export const ProductDisplay = ({ productId }) => {
             <div className="productdisplay-right">
                 <h1>{product.nombre}</h1>
                 <div className="productdisplay-right-stars">
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(product.prom_opinion)].map((_, index) => (
                         <box-icon key={index} type='solid' name='star'></box-icon>
                     ))}
-                    <p>(122)</p>
+                    {[...Array(5-product.prom_opinion)].map((_, index) => (
+                        <box-icon key={index} type='solid' name='star' color='gray'></box-icon>
+                    ))}
+                    <p>({product.opiniones.length})</p>
                 </div>
                 <div className="productdisplay-right-prices">
                     <div className="productdisplay-right-price-new">${product.valor_venta}</div>

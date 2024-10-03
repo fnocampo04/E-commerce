@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect, useContext, useState } from 'react';
+import { ShopContext } from '../../Context/ShopContext';
 import './NewCollections.css'
 import new_collection from '../Assets/new_collections'
 import { Item } from '../Item/Item'
 
 export const NewCollections = () => {
+  const {allProducts} = useContext(ShopContext);
+  const top8Products = allProducts
+  .filter(product => product.prom_opinion !== undefined)
+  .sort((a, b) => b.prom_opinion - a.prom_opinion)
+  .slice(0, 8);
   return (
     <div className='new-collections'>
-        <h1>NUEVAS COLECCIONES</h1>
+        <h1>FAVORITAS</h1>
         <hr />
         <div className='collections'>
-            {new_collection.map((item,i)=>{
-                return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
+            {top8Products.map((item,i)=>{
+                return <Item key={i} id={item.id_prod} name={item.nombre} image={item.img_url[0]} new_price={item.valor_venta}/>
             })}
         </div>
     </div>

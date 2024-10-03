@@ -52,7 +52,7 @@ export const Navbar = () => {
             colorIcon = 'black';
         } 
     } 
-    } else if (location.pathname==='/admin' || location.pathname==='/admin/producto' || location.pathname==='/admin/descuento' || location.pathname==='/admin/proveedor'){
+    } else if (location.pathname==='/admin' || location.pathname==='/admin/producto' || location.pathname==='/admin/descuento' || location.pathname==='/admin/proveedor' || location.pathname==='/admin/facturas'){
         navbarClass='navbar-hide' 
         navMenu = 'navmenu-hide';
         navLogo = 'nav-logo';

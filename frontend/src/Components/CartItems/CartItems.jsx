@@ -1,13 +1,31 @@
-import React, { useContext , useState} from 'react'
+import React, { useContext , useState, useEffect} from 'react'
 import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
+import axios from 'axios';
 
 
 export const CartItems = () => {
-
     const {getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login,idClie} = useContext(ShopContext);
     const [showPaymentDetails, setShowPaymentDetails] = useState(false); // Controla si mostramos los detalles de pago
+    const [subtotal, setSubtotal] = useState(0); // Inicializa subtotal
+
+    const calculateSubtotal = () => {
+        let total = 0; // Inicializa el total a 0
+
+        allProducts.forEach((e) => {
+            const cartItem = cartItems[e.id_prod];
+            if (cartItem && cartItem.quantity > 0) {
+                total += e.valor_venta * cartItem.quantity; // Suma al total
+            }
+        });
+
+        return total; // Retorna el total calculado
+    };
+
+    useEffect(() => {
+        setSubtotal(calculateSubtotal()); // Calcula y establece el subtotal cada vez que cambian los productos del carrito
+    }, [cartItems, allProducts]);
   
     const handleSubmit = async () => {
         try {
@@ -17,13 +35,11 @@ export const CartItems = () => {
             cartItems
           });
     
-        if (response.data.message === 'Proveedor insertado exitosamente') {
-            alert("Proveedor insertado exitosamente");
-          } else {
-            alert("Proveedor no insertado.");
-          }
+        if (response.data.message === 'Factura insertada exitosamente') {
+            alert("Factura insertada exitosamente "+response.data.nombre+". Gracias por su compra, su factura es la número "+response.data.id_fact)
+        }
         } catch (err) {
-          alert("Error al insertar el proveedor, el proveedor ya existe.");
+          alert("Error al insertar la Factura");
         }
       };
 
@@ -33,6 +49,12 @@ export const CartItems = () => {
       } else {
         alert("Por favor, inicia sesión para proceder con el pago.");
       }
+    };
+
+    const handleMultipleActions = () => {
+        handlePayment(); // Llama a la función que maneja el pago
+        // Puedes agregar otras funciones aquí
+        handleSubmit()
     };
 
   return (
@@ -49,7 +71,6 @@ export const CartItems = () => {
         <hr />
        {allProducts.map((e)=>{
         if(cartItems[e.id_prod].quantity>0){
-
             return <div>
             <div className="cartitems-format cartitems-format-main">
                 <img src={e.img_url[0]} alt="" className='cartitems-product-icon' />
@@ -82,7 +103,7 @@ export const CartItems = () => {
                 <h3>Total</h3>
                 <h3>${getTotalCartAmount()}</h3>
             </div>
-            <button onClick={handlePayment}>PROCEDER AL PAGO</button> {/* Botón depende del login */}
+            <button onClick={handleMultipleActions}>PROCEDER AL PAGO</button> {/* Botón depende del login */}
         </div>
         <div>
 
@@ -92,7 +113,6 @@ export const CartItems = () => {
             <div>
                 ID CLIENTE: <p>{idClie}</p>
             </div>
-
             {allProducts.map((e) => {
             const cartItem = cartItems[e.id_prod];
             if (cartItem && cartItem.quantity > 0) {
@@ -109,6 +129,7 @@ export const CartItems = () => {
             }
             return null;
             })}
+            {}
         </div>
       )}
     </div>

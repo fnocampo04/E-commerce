@@ -11,7 +11,23 @@ export const ShopCategory = (props) => {
   const handleSortOptionSelected = (option) => {
       setSelectedSort(option);
     };
-  const { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa } = useContext(ShopContext); // Cambiamos a allProducts
+  const { getTotalCartItems, getTotalCartAmount, allProducts, cartItems, addToCart, removeFromCart, isLoggedIn, login, logout, idClie, allAccesorios, allRopa,allAccesoriosDesc,allAccesoriosAsc,allRopaDesc,allRopaAsc} = useContext(ShopContext); // Cambiamos a allProducts
+  
+  let accesorios;
+  let ropas;
+
+  if (selectedSort === "Precio: Descendente") {
+    accesorios = allAccesoriosDesc;
+    ropas = allRopaDesc;
+  } else if (selectedSort === "Precio: Ascendente") {
+    accesorios = allAccesoriosAsc; // Suponiendo que tienes esta variable
+    ropas = allRopaAsc;
+  } else {
+    accesorios = allAccesorios; // Valor por defecto
+    ropas = allRopa;
+  }
+  
+
   return (
     <div className='shop-category'>
       <img className='shopcategory-banner' src={props.banner} alt="" />
@@ -25,11 +41,10 @@ export const ShopCategory = (props) => {
       </p>
         <div className="shopcategory-sort">
           Ordenar por <SortDropdown onOptionSelected={handleSortOptionSelected} />
-          <p>Opción  {selectedSort}</p>
         </div>
       </div>
       <div className="shopcategory-products">
-        {allAccesorios.map((item, i) => {
+        {accesorios.map((item, i) => {
             if (props.category === "accesorio") {
               if(item.valor_venta!=item.valor_base){
                       return (
@@ -53,8 +68,10 @@ export const ShopCategory = (props) => {
                   />
                 );}
                     }
+
+
         })}
-        {allRopa.map((item, i) => {
+        {ropas.map((item, i) => {
             if (props.category!= "accesorio") {
               if(item.valor_venta!=item.valor_base){
                 return (

@@ -1,0 +1,56 @@
+.admin-bg {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.admin-input input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.admin-factura-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-factura-list li {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+ul li ul {
+    margin-top: 0.5rem;
+}
