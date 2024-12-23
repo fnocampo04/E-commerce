@@ -34,9 +34,9 @@ export const ShopCategory = (props) => {
       <div className="shopcategory-indexSort">
       <p>
         {props.category === "accesorio"? (
-          <span>Mostrando 1-12 de {allAccesorios.length} productos</span>
+          <span>Mostrando 1-{allAccesorios.length} de {allAccesorios.length} productos</span>
         ) : (
-          <span>Mostrando 1-12 de {allRopa.length} productos</span>
+          <span>Mostrando 1-{allRopa.length} de {allRopa.length} productos</span>
         )}
       </p>
         <div className="shopcategory-sort">

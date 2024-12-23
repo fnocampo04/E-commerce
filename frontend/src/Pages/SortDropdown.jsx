@@ -5,7 +5,7 @@ import './CSS/SortDropdown.css';
 const SortDropdown = ({ onOptionSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Por defecto');
-  const options = ['Precio: Ascendente', 'Precio: Descendente', 'Más Vendidos', 'Por defecto'];
+  const options = ['Precio: Ascendente', 'Precio: Descendente', 'Por defecto'];
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
